@@ -35,7 +35,7 @@ async entrar(){
     }
 
     if(usuario.nombre == f.user && usuario.password == f.password){
-      this.router.navigate(['/home']);
+      this.router.navigate(['/qr']);
     }else{
       const alert = await this.alertController.create({
         header: 'Datos incorrectos',

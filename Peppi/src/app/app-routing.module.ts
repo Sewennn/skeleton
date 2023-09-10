@@ -22,6 +22,18 @@ const routes: Routes = [
     path: 'registro',
     loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
   },
+  {
+    path: 'qr',
+    loadChildren: () => import('./pages/qr/qr.module').then( m => m.QRPageModule)
+  },
+  {
+    path: 'clase',
+    loadChildren: () => import('./pages/clase/clase.module').then( m => m.ClasePageModule)
+  },
+  {
+    path: 'password',
+    loadChildren: () => import('./pages/password/password.module').then( m => m.PasswordPageModule)
+  },
 ];
 
 @NgModule({
